@@ -30,7 +30,22 @@ Splurting out falsely attributed quotes and sayings since 2016!
 
 <br class="clear" />
 
-<%= yield %>
+<div class="container">
+  <%= yield %>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="col-xs-6">
+      <%= link_to "Hit me with another!", "#", class: 'next-quote' %>
+    </div>
+    <div class="col-xs-6 footer-blurb">
+      Developed in Queens by J.S.
+    </div>
+    
+  </div>
+</div>
+
 
 </body>
 </html>
