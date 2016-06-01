@@ -8,22 +8,24 @@
 </head>
 <body>
 <header>
-<div class="col-xs-3">
-<div class="circle">
-  <br />
-  Definitely
-  <br />
-  real
-  <br />
-  quotations
-</div>
-</div>
-<div class="col-xs-4 slogan">
-Splurting out falsely attributed quotes and sayings since 2016!
-</div>
-<div class="col-xs-5 links">
-  <%= link_to 'Contribute', '#' %>
-  <%= link_to 'About', '#' %>
+  <div class="col-xs-3">
+    <%= link_to root_path, class: 'logo' do %>
+      <div class="circle">
+        <br />
+         Definitely
+        <br />
+        real
+        <br />
+        quotations
+      </div>
+  <% end %>
+  </div>
+  <div class="col-xs-4 slogan">
+    Splurting out falsely attributed quotes and sayings since 2016!
+  </div>
+  <div class="col-xs-5 links">
+   <%= link_to 'Contribute', new_quote_path %>
+    <%= link_to 'About', '#' %>
   </div>
 </header>
 <hr />
@@ -37,7 +39,7 @@ Splurting out falsely attributed quotes and sayings since 2016!
 <div class="footer">
   <div class="container">
     <div class="col-xs-6">
-      <%= link_to "Hit me with another!", "#", class: 'next-quote' %>
+      <%= link_to "Hit me with another!", root_path, class: 'next-quote' %>
     </div>
     <div class="col-xs-6 footer-blurb">
       Developed in Queens by J.S.
